@@ -6,8 +6,10 @@ public class Program
 {
     static void Main(string[] args)
     {
+        Console.WriteLine("Digite o tamanho da lista: ");
+        var tamanho = int.Parse(Console.ReadLine());
         Random aleatorio = new Random();
-        int[] listaAleatoria = new int[30000];
+        int[] listaAleatoria = new int[tamanho];
         int[] listaAuxiliar = new int[6];
         int repetido = 0;
         float valorFace;
