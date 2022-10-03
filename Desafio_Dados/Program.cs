@@ -61,23 +61,23 @@ public class Program
         for (int i = 1; i < tamanho; i++)
         {
             var valorFaceDado = aleatorio.Next(1, 100);
-            if (valorFaceDado >= 1 && valorFaceDado < 13)
+            if (valorFaceDado <= 13)
             {
                 valorFace1++;
             }
-            else if(valorFaceDado >= 13 && valorFaceDado < 26)
+            else if(valorFaceDado <= 26)
             {
                 valorFace2++;
             }
-            else if(valorFaceDado >= 26 && valorFaceDado < 39)
+            else if(valorFaceDado <= 39)
             {
                 valorFace3++;
             }
-            else if(valorFaceDado >= 39 && valorFaceDado < 52)
+            else if(valorFaceDado <= 52)
             {
                 valorFace4++;
             }
-            else if(valorFaceDado >= 52 && valorFaceDado < 65)
+            else if(valorFaceDado <= 65)
             {
                 valorFace5++;
             }
@@ -96,12 +96,12 @@ public class Program
         resultado6 = (valorFace6 / tamanho) * 100;
 
         Console.WriteLine($"Porcentagem das faces de cada dado: \n" +
-            $"Valor da Face 1 = {resultado1.ToString("F")} % \n" +
-            $"Valor da Face 2 = {resultado2.ToString("F")} % \n" +
-            $"Valor da Face 3 = {resultado3.ToString("F")} % \n" +
-            $"Valor da Face 4 = {resultado4.ToString("F")} % \n" +
-            $"Valor da Face 5 = {resultado5.ToString("F")} % \n" +
-            $"Valor da Face 6 = {resultado6.ToString("F")} % \n");
+            $"Valor da Face 1 = resultado1 % \n" +
+            $"Valor da Face 2 = resultado2 % \n" +
+            $"Valor da Face 3 = resultado3 % \n" +
+            $"Valor da Face 4 = resultado4 % \n" +
+            $"Valor da Face 5 = resultado5 % \n" +
+            $"Valor da Face 6 = resultado6 % \n");
 
 
     }
